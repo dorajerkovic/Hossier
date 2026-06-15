@@ -3,100 +3,406 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hossier</title>
+  <title>Hossier | Gravel Driveways, Site Prep &amp; Drainage in Central Indiana</title>
+  <meta name="description" content="Owner-operated gravel driveways, site prep, and drainage across Shelby County and Central Indiana. Travis Cobler runs the equipment and shows up when he says he will — call Hossier for dependable dirt work." />
+
+  <!-- Open Graph (link previews when shared on social / messaging) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hossier | Gravel Driveways, Site Prep &amp; Drainage in Central Indiana" />
+  <meta property="og:description" content="Owner-operated dirt work across Shelby County and Central Indiana — gravel driveways, site prep, and drainage you can count on." />
+  <meta property="og:image" content="images/excavator-grading-gravel-driveway-central-indiana.jpg" />
+
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Page-specific styles for the home page.
-       Colors and font come from the global tokens in styles.css. */
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 2rem;
-    }
-    .logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; }
-    nav a {
-      color: var(--color-white);
-      opacity: 0.7;
-      margin-left: 1.5rem;
-      font-size: 0.95rem;
-      transition: opacity 0.2s;
-    }
-    nav a:hover { opacity: 1; }
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-      margin-bottom: 1rem;
-    }
-    /* Desktop: give the headline generous breathing room on the sides */
-    @media (min-width: 768px) {
-      h1 {
-        padding-left: 15%;
-        padding-right: 15%;
-      }
-    }
-    .accent { color: var(--color-accent); }
-    p.lead {
-      color: var(--color-white);
-      opacity: 0.7;
-      font-size: 1.2rem;
-      max-width: 42rem;
-      margin-bottom: 2rem;
-    }
-    .cta {
-      display: inline-block;
-      background: var(--color-accent);
-      color: var(--color-black);
-      padding: 0.85rem 2rem;
-      border-radius: 999px;
-      font-weight: 600;
-      transition: transform 0.15s, opacity 0.2s;
-    }
-    .cta:hover { transform: translateY(-2px); opacity: 0.92; }
-    footer {
-      padding: 1.5rem 2rem;
-      text-align: center;
-      color: var(--color-white);
-      opacity: 0.5;
-      font-size: 0.85rem;
-    }
-  </style>
 </head>
 <body>
-  <header>
+  <header id="site-header">
     <div class="logo">Hossier</div>
-    <nav>
+    <nav class="nav">
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
+  <!-- Hero -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/excavator-grading-gravel-driveway-central-indiana.webp" type="image/webp" />
+      <img
+        class="bg-photo"
+        src="images/excavator-grading-gravel-driveway-central-indiana.jpg"
+        alt="Excavator and skid steer grading a rural gravel driveway in central Indiana"
+        width="1920"
+        height="1280"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </picture>
+    <div class="bg-overlay"></div>
+
     <h1>Gravel Driveways, Site Prep &amp; Drainage You Can Count On Across <span class="accent">Central Indiana</span></h1>
     <p class="lead">
       Travis Cobler runs the equipment, picks up the phone, and shows up when
       he says he will. Owner-operated dirt work for property owners across
       Shelby County and the counties around it.
     </p>
-    <a class="cta" href="#contact">Contact Us</a>
-  </main>
+    <a class="btn" href="#contact">Contact Us</a>
+  </section>
 
-  <footer>
-    &copy; 2026 Hossier. All rights reserved.
+  <!-- Services -->
+  <section class="section--dark" id="services">
+    <div class="services-grid">
+
+      <article class="card">
+        <h3>Gravel Driveway Installation &amp; Repair</h3>
+        <p>New gravel driveways, regrading, and culvert work built for Indiana weather and the trucks that use them.</p>
+        <ul>
+          <li>New driveway installations from base prep through final crown</li>
+          <li>Regrading and rock replenishment for eroded or rutted drives</li>
+          <li>Culvert sizing and placement for proper driveway drainage</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Site Preparation &amp; Grading</h3>
+        <p>Land prep and grading for new construction, outbuildings, and property additions across central Indiana.</p>
+        <ul>
+          <li>Lot leveling and rough grading for new builds</li>
+          <li>Pole barn and building pad preparation</li>
+          <li>Final grading ahead of concrete pours and landscaping</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Drainage Solutions</h3>
+        <p>Water management work that holds up through Indiana wet springs and freeze-thaw winters.</p>
+        <ul>
+          <li>Culvert installation and replacement</li>
+          <li>Surface drainage and yard water diversion</li>
+          <li>Erosion control and agricultural tile repair</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Excavation Services</h3>
+        <p>General excavation and trenching for residential and rural properties throughout Shelby County.</p>
+        <ul>
+          <li>Trenching for utilities and drainage lines</li>
+          <li>Earthmoving and debris removal</li>
+          <li>Foundation prep and tight-access work with the mini excavator</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Land Clearing</h3>
+        <p>Light brush management and fence line clearing handled with a skid steer brush hook.</p>
+        <ul>
+          <li>Brush clearing for rural and residential lots</li>
+          <li>Fence line and trail preparation</li>
+          <li>Small acreage clearing ahead of new construction</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- About / Hire Travis -->
+  <section class="section section--light about" id="about">
+    <div class="container row row--2">
+      <img
+        class="img-fluid"
+        src="images/travis.webp"
+        alt="Travis Cobler, owner-operator of Hoosier Dirt &amp; Gravel"
+        width="1160"
+        height="1159"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="about-text">
+        <h2>Hire Travis. Get Travis.</h2>
+        <p class="intro">
+          When you call Hoosier Dirt &amp; Gravel, the owner answers the phone.
+          When you book an estimate, the owner drives out. When the equipment
+          shows up on your property, the same hands that quoted the work are the
+          ones running the machines. No managers, no subs, no handoffs.
+        </p>
+        <a class="btn" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why / checklist -->
+  <section class="section section--light section--center why" id="why">
+    <div class="container container--narrow">
+      <h2>Owned Equipment, Honest Quotes, And Phones That Get Answered</h2>
+      <p class="intro">
+        Dirt work in central Indiana has a reputation problem. Missed calls.
+        No-shows. Quotes that change after the truck pulls onto the property.
+        At Hoosier Dirt &amp; Gravel, every estimate, every machine hour, and
+        every follow-up call goes through one person: Travis. Here's what that
+        means for your project:
+      </p>
+      <ul class="checklist">
+        <li class="check-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg>
+          <span>Mini excavator, mini skid steer, and full skid steer owned outright, so no rental markups in your quote</span>
+        </li>
+        <li class="check-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg>
+          <span>Free on-site estimates across Shelby County and the surrounding counties</span>
+        </li>
+        <li class="check-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg>
+          <span>Financing options available through the Joist platform (ask when you call)</span>
+        </li>
+        <li class="check-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg>
+          <span>Equipment range sized for tight access work and larger site prep alike</span>
+        </li>
+        <li class="check-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" /></svg>
+          <span>Trusted referrals from Fairland Landscape &amp; Supply, your local material yard</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Features / What sets us apart -->
+  <section class="section section--dark section--center features" id="why-us">
+    <div class="container">
+      <h2>What Sets Hoosier Dirt &amp; Gravel Apart</h2>
+      <p class="intro">Six reasons property owners across central Indiana call us first.</p>
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2" y="16" width="12" height="4" rx="2" />
+            <path d="M5 16v-4h5v4" />
+            <path d="M10 12l5-3 4 6" />
+            <path d="M19 15l1 3h-4z" />
+          </svg>
+          <h3>Owned Equipment Fleet</h3>
+          <p>Mini excavator, mini skid steer, and full skid steer paid for and ready to roll. No daily rental fees stacking up against your project budget.</p>
+        </article>
+
+        <article class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M2 16c4-3 16-3 20 0" />
+            <path d="M2 11c4-3 16-3 20 0" />
+            <path d="M2 21c4-3 16-3 20 0" />
+          </svg>
+          <h3>Built For Rural Indiana</h3>
+          <p>Driveways, drainage, and site prep for properties that don't fit a city contractor's playbook. Acreage, gravel lanes, and pole barns are home turf.</p>
+        </article>
+
+        <article class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 4L3 8l4 4" />
+            <path d="M3 8h13a4 4 0 0 1 4 4" />
+            <path d="M17 20l4-4-4-4" />
+            <path d="M21 16H8a4 4 0 0 1-4-4" />
+          </svg>
+          <h3>Range Of Services Under One Roof</h3>
+          <p>Driveway today, drainage in the spring, pad prep for the barn next year. One contractor who knows the property and shows up when you call.</p>
+        </article>
+
+        <article class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 17c3 0 3-7 6-7s2 5 5 5 4-9 7-9" />
+            <path d="M3 21h18" />
+          </svg>
+          <h3>Honest, Up-Front Quotes</h3>
+          <p>Free on-site estimates with clear numbers before any equipment moves. The price you agree to is the price you pay.</p>
+        </article>
+
+        <article class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7A2 2 0 0 1 22 16.9z" />
+          </svg>
+          <h3>Same-Day Callbacks</h3>
+          <p>Phones answered Monday through Saturday, 7 AM to 7 PM. Missed calls returned the same day whenever the dirt allows.</p>
+        </article>
+
+        <article class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="12" y1="2" x2="12" y2="22" />
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+          </svg>
+          <h3>Financing Available</h3>
+          <p>Project financing through the Joist platform for jobs that need flexible payment terms. Ask for details when you book your estimate.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials slider -->
+  <!-- NOTE: testimonials 2–4 are placeholders — replace with real customer quotes before launch. -->
+  <section class="section section--dark section--center testimonials" id="testimonials">
+    <div class="container container--narrow">
+      <div class="slider">
+        <div class="slider-track">
+
+          <blockquote class="slide">
+            <p class="quote">"Travis showed up when he said he would, gave us a fair estimate, and finished the driveway in two days. It still looks the same as the day he put it in. I'll be calling him for the drainage work next spring."</p>
+            <cite class="attribution">— Frank K., Shelbyville</cite>
+          </blockquote>
+
+          <blockquote class="slide">
+            <p class="quote">"Our backyard turned into a swamp every spring. Travis put in a culvert and regraded the whole lot, and we haven't had standing water since. Honest pricing, and no surprises on the final bill."</p>
+            <cite class="attribution">— Megan R., Fairland</cite>
+          </blockquote>
+
+          <blockquote class="slide">
+            <p class="quote">"We needed a pad prepped for a new pole barn on short notice. Travis walked the property with us, quoted it on the spot, and had the site ready before our builder showed up. Couldn't ask for a smoother job."</p>
+            <cite class="attribution">— Dwight &amp; Carol S., Morristown</cite>
+          </blockquote>
+
+          <blockquote class="slide">
+            <p class="quote">"Half a mile of gravel lane that hadn't been touched in years — Travis regraded it and added rock where it needed it, and now my trucks don't bottom out anymore. He answers his phone and does what he says he'll do."</p>
+            <cite class="attribution">— Brian T., Waldron</cite>
+          </blockquote>
+
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-arrow" type="button" data-dir="-1" aria-label="Previous testimonial">&lsaquo;</button>
+        <div class="slider-dots"></div>
+        <button class="slider-arrow" type="button" data-dir="1" aria-label="Next testimonial">&rsaquo;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA banner -->
+  <section class="banner" id="get-started">
+    <img
+      class="bg-photo"
+      src="images/driveway.webp"
+      alt="Freshly graded gravel driveway on a rural central Indiana property"
+      width="1160"
+      height="773"
+      loading="lazy"
+      decoding="async"
+    />
+    <div class="bg-overlay"></div>
+
+    <div class="container container--narrow">
+      <h2>Get The Project On The Schedule</h2>
+      <p class="intro">
+        Free on-site estimates across central Indiana. Call (317) 364-1987 or
+        send a message through the form. We'll walk the property, talk through
+        what the work needs, and write a quote before any equipment moves.
+      </p>
+      <div class="btn-group">
+        <a class="btn" href="tel:+13173641987">Call (317) 364-1987</a>
+        <a class="btn btn--outline" href="contact.html">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer body-small">
+    <div class="container footer-grid">
+
+      <div class="footer-col footer-brand">
+        <!-- Logo placeholder — replace with logo image when available -->
+        <div class="footer-logo">Hoosier Dirt &amp; Gravel</div>
+        <p>Owner-operated gravel driveways, site prep, and drainage across Shelby County and central Indiana.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Driveway Installation &amp; Repair</a></li>
+          <li><a href="#services">Site Preparation &amp; Grading</a></li>
+          <li><a href="#services">Drainage Solutions</a></li>
+          <li><a href="#services">Excavation Services</a></li>
+          <li><a href="#services">Land Clearing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          3906 South Smithland Road<br />
+          Shelbyville, IN 46176<br />
+          <a href="tel:+13173641987">(317) 364-1987</a><br />
+          <a href="mailto:sales@hoosierdirtgravel.com">sales@hoosierdirtgravel.com</a><br />
+          <a href="https://hoosierdirtandgravel.com/" target="_blank" rel="noopener">hoosierdirtandgravel.com</a>
+        </address>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=61584137004249" target="_blank" rel="noopener" aria-label="Hoosier Dirt &amp; Gravel on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.9h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul class="hours">
+          <li>Mon – Fri: 7:00 AM – 7:00 PM</li>
+          <li>Saturday: 9:00 AM – 7:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Hoosier Dirt &amp; Gravel. All rights reserved.</p>
+      <nav class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </div>
   </footer>
+
+  <script>
+    // Make the navbar solid once the user scrolls past the top.
+    const header = document.getElementById('site-header');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Testimonials slider: one visible at a time, arrows + dots + auto-advance.
+    (function () {
+      const slider = document.querySelector('.slider');
+      const track = document.querySelector('.slider-track');
+      if (!slider || !track) return;
+
+      const slides = Array.from(track.children);
+      const dotsWrap = document.querySelector('.slider-dots');
+      let index = 0;
+      let timer;
+
+      // Build a dot for each slide
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to testimonial ' + (i + 1));
+        dot.addEventListener('click', () => go(i));
+        dotsWrap.appendChild(dot);
+      });
+      const dots = Array.from(dotsWrap.children);
+
+      function go(i) {
+        index = (i + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + index * 100 + '%)';
+        dots.forEach((d, di) => d.classList.toggle('active', di === index));
+      }
+
+      document.querySelectorAll('.slider-arrow').forEach((btn) => {
+        btn.addEventListener('click', () => go(index + Number(btn.dataset.dir)));
+      });
+
+      function start() { timer = setInterval(() => go(index + 1), 6000); }
+      function stop() { clearInterval(timer); }
+      slider.addEventListener('mouseenter', stop);
+      slider.addEventListener('mouseleave', start);
+      start();
+    })();
+  </script>
 </body>
 </html>
