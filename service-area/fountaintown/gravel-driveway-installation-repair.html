@@ -18,12 +18,17 @@
   <link rel="canonical" href="https://hoosierdirtandgravel.com/service-area/fountaintown/gravel-driveway-installation-repair.html" />
   <meta name="theme-color" content="#0a0a0a" />
   <link rel="apple-touch-icon" href="../../images/favicon.png" />
-  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../styles.css?v=5" />
 </head>
 <body>
   <header id="site-header">
     <a href="../../index.html" class="logo"><img src="../../images/logo-horizontal.webp" alt="Hoosier Dirt &amp; Gravel" /></a>
-    <nav class="nav">
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="primary-nav">
       <div class="nav-item has-dropdown">
         <a href="../../services.html" class="nav-link">Services <span class="caret" aria-hidden="true">&#9662;</span></a>
         <div class="dropdown">
@@ -361,6 +366,50 @@
     const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Hamburger menu for tablet/mobile: toggle the nav panel and inline accordions.
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('primary-nav');
+      if (!toggle || !nav) return;
+      const isMobile = () => window.matchMedia('(max-width: 900px)').matches;
+
+      function closeMenu() {
+        header.classList.remove('nav-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
+        nav.querySelectorAll('.open').forEach((el) => el.classList.remove('open'));
+      }
+
+      toggle.addEventListener('click', function () {
+        const open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        if (!open) nav.querySelectorAll('.open').forEach((el) => el.classList.remove('open'));
+      });
+
+      // On mobile, a parent link with children expands its accordion instead of navigating.
+      nav.querySelectorAll('.has-dropdown > .nav-link, .has-submenu > a').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          if (!isMobile()) return;
+          e.preventDefault();
+          link.parentElement.classList.toggle('open');
+        });
+      });
+
+      // Tapping a real destination link closes the menu.
+      nav.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          const isParent = a.matches('.has-dropdown > .nav-link, .has-submenu > a');
+          if (isMobile() && !isParent) closeMenu();
+        });
+      });
+
+      // Reset state when resizing back up to desktop.
+      window.addEventListener('resize', function () {
+        if (!isMobile()) closeMenu();
+      });
+    })();
 
     // Image gallery slider: one visible at a time, arrows + dots + auto-advance.
     (function () {
