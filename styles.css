@@ -1028,9 +1028,12 @@ h1, h2, h3, h4 { margin-bottom: 20px; }
 }
 /* On light sections the white chevrons/dots would vanish — darken them */
 .section--light .slider-arrow,
-.section--light-alt .slider-arrow { color: var(--color-black); }
+.section--light-alt .slider-arrow {
+  color: var(--color-black);
+  border-color: var(--color-black);
+}
 .section--light .dot,
-.section--light-alt .dot { background: rgba(10, 10, 10, 0.25); }
+.section--light-alt .dot { background: rgba(10, 10, 10, 0.45); }
 .slider-dots { display: flex; gap: 0.5rem; }
 .dot {
   width: 10px;
